@@ -1,7 +1,7 @@
 Summary:	Poetry plugin to export the dependencies to various formats
 Name:		python-poetry-plugin-export
-Version:	1.3.0
-Release:	2
+Version:	1.5.0
+Release:	1
 License:	MIT
 Group:		Development/Python
 URL:		https://pypi.org/project/poetry-plugin-export/
@@ -11,7 +11,6 @@ BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(poetry-core)
-
 BuildArch:	noarch
 
 %description
@@ -21,14 +20,6 @@ various formats.
 This plugin provides the same features as the existing export command
 of Poetry which it will eventually replace.
 
-%files
-%license LICENSE
-%doc README.md
-%{py_sitedir}/poetry_plugin_export
-%{py_sitedir}/poetry_plugin_export-*.*-info
-
-#--------------------------------------------------------------------
-
 %prep
 %autosetup -p1 -n poetry_plugin_export-%{version}
 
@@ -37,5 +28,9 @@ of Poetry which it will eventually replace.
 
 %install
 %py_install
-	
 
+%files
+%license LICENSE
+%doc README.md
+%{py_sitedir}/poetry_plugin_export
+%{py_sitedir}/poetry_plugin_export-*.*-info
