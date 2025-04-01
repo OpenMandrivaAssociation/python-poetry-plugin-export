@@ -1,11 +1,12 @@
 Summary:	Poetry plugin to export the dependencies to various formats
 Name:		python-poetry-plugin-export
-Version:	1.8.0
+Version:	1.9.0
 Release:	1
 License:	MIT
 Group:		Development/Python
 URL:		https://pypi.org/project/poetry-plugin-export/
 Source0:	https://files.pythonhosted.org/packages/source/p/poetry_plugin_export/poetry_plugin_export-%{version}.tar.gz
+BuildSystem:	python
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
